@@ -9,62 +9,62 @@ public class App {
 
 
 		while(true){
-      int a,b;
+      int num1,num2;
       System.out.println("Enter two numbers");
-      a = scan.nextInt();
-      b = scan.nextInt();
-			System.out.println("Press 1 to add");
-			System.out.println("Press 2 to subtract");
-			System.out.println("Press 3 to multiply");
-			System.out.println("Press 4 to divide");
+      num1 = scan.nextInt();
+      num2 = scan.nextInt();
+			System.out.println("Enter 1 to add");
+			System.out.println("Enter 2 to subtract");
+			System.out.println("Enter 3 to multiply");
+			System.out.println("Enter 4 to divide");
 
-			System.out.println("To Exit, Enter 9");
+			System.out.println("Enter 5 to exit");
 
 			System.out.println();
-			System.out.println("Enter your choice::");
+			System.out.println("Enter your choice: ");
 			int choice = scan.nextInt();
 			switch(choice){
 			case 1:
-			add(a,b);
+			add(num1,num2);
 			break;
 			case 2:
-			sub(a,b);
+			sub(num1,num2);
 			break;
 			case 3:
-			mul(a,b);
+			mul(num1,num2);
 			break;
 			case 4:
-			div(a,b);
+			div(num1,num2);
 			break;
-			case 9: System.out.println("Exiting calculator");
+			case 9: System.out.println("Exiting calculator....");
 			System.exit(0);
 			break;
-			default: System.out.println("Incorrect choice!!");
+			default: System.out.println("Exiting due to invalid input!!");
 			}
 		}
 
 	}
 
-	public static int add(int a,int b){
-		int sum = a+b;
+	public static int add(int num1,int num2){
+		int sum = num1+num2;
 		System.out.println("Result is "+sum);
 		return sum;
 	}
 
-	public static int sub(int a,int b){
-	      int c = a-b;
-		  System.out.println("Result is "+(a-b));
+	public static int sub(int num1,int num2){
+	      int c = num1-num2;
+		  System.out.println("Result is "+(num1-num2));
 		  return c;
 	  }
-	public static int mul(int a,int b){
-		int c = a*b;	
-		  System.out.println("Result is "+ (a*b));
+	public static int mul(int num1,int num2){
+		int c = num1*num2;	
+		  System.out.println("Result is "+ (num1*num2));
 		  return c;
 		}
 
-	  public static int div(int a,int b){
-		    int c = a/b;
-			  System.out.println("Result is "+ (a/b));
+	  public static int div(int num1,int num2){
+		    int c = num1/num2;
+			  System.out.println("Result is "+ (num1/num2));
 			  return c;
 		  }
 
