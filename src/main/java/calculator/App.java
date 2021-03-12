@@ -27,9 +27,9 @@ public class App {
 						System.out.println("You choose Addition!!");
 						System.out.println("");
 						System.out.print("Enter number 1: ");
-						num1 = reader.nextDouble();
+						num1 = reader.nextInt();
 						System.out.print("Enter number 2: ");
-						num2 = reader.nextDouble();
+						num2 = reader.nextInt();
 						add(num1,num2);
 					break;
 
@@ -37,9 +37,9 @@ public class App {
 						System.out.println("You choose Subtraction!!");
 						System.out.println("");
 						System.out.print("Enter number 1: ");
-						num1 = reader.nextDouble();
+						num1 = reader.nextInt();
 						System.out.print("Enter number 2: ");
-						num2 = reader.nextDouble();
+						num2 = reader.nextInt();
 						sub(num1,num2);
 					break;
 
@@ -47,9 +47,9 @@ public class App {
 						System.out.println("You choose Multiplication!!");				
 						System.out.println("");
 						System.out.print("Enter number 1: ");
-						num1 = reader.nextDouble();
+						num1 = reader.nextInt();
 						System.out.print("Enter number 2: ");
-						num2 = reader.nextDouble();
+						num2 = reader.nextInt();
 						mul(num1,num2);
 					break;
 
@@ -57,9 +57,9 @@ public class App {
 						System.out.println("You choose Division!!");
 						System.out.println("");
 						System.out.print("Enter number 1: ");
-						num1 = reader.nextDouble();
+						num1 = reader.nextInt();
 						System.out.print("Enter number 2: ");
-						num2 = reader.nextDouble();
+						num2 = reader.nextInt();
 						div(num1,num2);
 					break;
 
