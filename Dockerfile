@@ -7,3 +7,4 @@ COPY src /usr/local/Calculator/src
 WORKDIR /usr/local/Calculator
 RUN mvn package
 CMD ["java","-cp","target/CalculatorDevops-1.0-SNAPSHOT.jar","calculator.App"]
+
