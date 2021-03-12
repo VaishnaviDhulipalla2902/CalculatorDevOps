@@ -1,0 +1,34 @@
+pipeline{
+    environment{
+        docker_image = ""
+    }
+    agent any
+    stages{
+        stage('Step 1: Git Clone'){
+            steps{
+                git branch: 'main', url: 'https://github.com/VaishnaviDhulipalla2902/CalculatorDevOps.git'
+            }
+        }
+        stage('Step 2: Maven'){
+            steps{
+                sh 'mvn clean test'
+            }
+        }
+        stage('Step 3: Build docker image') {
+            steps {
+                script {
+                    docker_image = docker.build "vaishnavi2902/calculator_devops"
+                }
+            }
+        }
+        stage('Step 4: Push docker image to hub') {
+            steps {
+                script {
+                    docker.withRegistry('', 'docker') {
+                        docker_image.push()
+                    }
+                }
+            }
+        }   
+    }
+}
