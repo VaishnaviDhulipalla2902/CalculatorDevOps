@@ -5,7 +5,7 @@ public class App {
 	public static void main(String[] args){
 		Scanner reader = new Scanner(System.in);
 		int op, flag=0;
-		double num1, num2;
+		int num1, num2;
 		System.out.println("------------Calculator--------------");
 		do{
 			System.out.println("Choices of Operations:");
@@ -71,30 +71,30 @@ public class App {
 		    }while(flag == 0);
 		}
 
-	public static double add(double num1,double num2){
-		double c = num1+num2;
+	public static int add(int num1,int num2){
+		int c = num1+num2;
 		System.out.println("");
 		System.out.println("The Result is "+c);
 		System.out.println("");
 		return c;
 	}
 
-	public static double sub(double num1,double num2){
-	    double c = num1-num2;
+	public static int sub(int num1,int num2){
+	    int c = num1-num2;
 		System.out.println("");
 		System.out.println("The Result is "+(num1-num2));
 		System.out.println("");
 		return c;
 	}
-	public static double mul(double num1,double num2){
-		double c = num1*num2;	
+	public static int mul(int num1,int num2){
+		int c = num1*num2;	
 		System.out.println("");
 		System.out.println("The Result is "+ (num1*num2));
 		System.out.println("");
 		return c;
 	}
-	  public static double div(double num1,double num2){
-		double c = num1/num2;
+	  public static int div(int num1,int num2){
+		int c = num1/num2;
 		System.out.println("");
 		System.out.println("The Result is "+ (num1/num2));
 		System.out.println("");
