@@ -1,0 +1,10 @@
+---
+- name: Pull Docker image of Calculator
+  hosts: all
+  vars:
+    ansible_python_interpreter: /usr/bin/python3.6.9
+  tasks:
+    - name: Pull image
+      docker_image:
+        name: vaishnavi2902/calculator_devops:latest
+        source: pull
