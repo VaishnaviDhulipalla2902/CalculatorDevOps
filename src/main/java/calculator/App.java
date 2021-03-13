@@ -5,15 +5,16 @@ public class App {
 	public static void main(String[] args){
 		Scanner reader = new Scanner(System.in);
 		int op, flag=0;
-		int num1, num2;
+		double num, exp;
+		int numm;
 		System.out.println("------------Calculator--------------");
 		do{
 			System.out.println("Choices of Operations:");
             System.out.println("");
-            System.out.println("1. Addition");
-            System.out.println("2. Subtraction");
-            System.out.println("3. Multiplication");
-            System.out.println("4. Division");
+            System.out.println("1. Square root");
+            System.out.println("2. Factorial");
+            System.out.println("3. Natural Log");
+            System.out.println("4. Power");
             System.out.println("5. Exit");
 			System.out.println("");
             System.out.print("Enter your choice(number): ");
@@ -23,44 +24,38 @@ public class App {
 			else{				
 				switch(op){
 					
-					case 1:  // Addition
-						System.out.println("You choose Addition!!");
+					case 1:  // Square Root
+						System.out.println("You choose Square Root!!");
 						System.out.println("");
-						System.out.print("Enter number 1: ");
-						num1 = reader.nextInt();
-						System.out.print("Enter number 2: ");
-						num2 = reader.nextInt();
-						add(num1,num2);
+						System.out.print("Enter number: ");
+						num = reader.nextDouble();
+						squareRoot(num);
 					break;
 
-					case 2: //Subtraction
-						System.out.println("You choose Subtraction!!");
+					case 2: //Factorial
+						System.out.println("You choose Factorial!!");
 						System.out.println("");
-						System.out.print("Enter number 1: ");
-						num1 = reader.nextInt();
-						System.out.print("Enter number 2: ");
-						num2 = reader.nextInt();
-						sub(num1,num2);
+						System.out.print("Enter number: ");
+						numm = reader.nextInt();
+						factorial(numm);
 					break;
 
-					case 3: //Multiplication
-						System.out.println("You choose Multiplication!!");				
+					case 3: //Natural Log
+						System.out.println("You choose Natural Log!!");				
 						System.out.println("");
-						System.out.print("Enter number 1: ");
-						num1 = reader.nextInt();
-						System.out.print("Enter number 2: ");
-						num2 = reader.nextInt();
-						mul(num1,num2);
+						System.out.print("Enter number: ");
+						num = reader.nextDouble();
+						naturalLog(num);
 					break;
 
-					case 4: //Division
-						System.out.println("You choose Division!!");
+					case 4: //Power
+						System.out.println("You choose Power!!");
 						System.out.println("");
-						System.out.print("Enter number 1: ");
-						num1 = reader.nextInt();
-						System.out.print("Enter number 2: ");
-						num2 = reader.nextInt();
-						div(num1,num2);
+						System.out.print("Enter number: ");
+						num = reader.nextDouble();
+						System.out.print("exponent: ");
+						exp = reader.nextDouble();
+						power(num,exp);
 					break;
 
 					default: 
@@ -71,34 +66,31 @@ public class App {
 		    }while(flag == 0);
 		}
 
-	public static int add(int num1,int num2){
-		int c = num1+num2;
+	public static void squareRoot(double num){
+		double c = Math.sqrt(num);
 		System.out.println("");
 		System.out.println("The Result is "+c);
 		System.out.println("");
-		return c;
 	}
 
-	public static int sub(int num1,int num2){
-	    int c = num1-num2;
+	public static void factorial(int num){
+	    int c = num ;
+		for(int i=num-1; i>=1; i--) c = c*i;
 		System.out.println("");
-		System.out.println("The Result is "+(num1-num2));
+		System.out.println("The Result is "+c);
 		System.out.println("");
-		return c;
 	}
-	public static int mul(int num1,int num2){
-		int c = num1*num2;	
+	public static void naturalLog(double num){
+		double c = Math.log(num);	
 		System.out.println("");
-		System.out.println("The Result is "+ (num1*num2));
+		System.out.println("The Result is "+ c);
 		System.out.println("");
-		return c;
 	}
-	  public static int div(int num1,int num2){
-		int c = num1/num2;
+	  public static void power(double num, double exp){
+		double c = Math.pow(num,exp);
 		System.out.println("");
-		System.out.println("The Result is "+ (num1/num2));
+		System.out.println("The Result is "+ c);
 		System.out.println("");
-		return c;
 	}
 
 }
