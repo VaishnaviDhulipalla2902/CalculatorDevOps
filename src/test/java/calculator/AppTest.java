@@ -1,4 +1,4 @@
-package App;
+package calculator;
 
 
 import org.junit.Assert;
@@ -6,28 +6,38 @@ import org.junit.Before;
 import org.junit.Test;
 
 public class AppTest {
-	App calc = new App();
-
 	@Test
-	public void squareRoot_test(){
-		assertEquals("True Positive for SquareRoot",5.0,App.squareRoot(25.0),0.0f);
-	}
-
+	    public void test_squareRoot() {
+	        double a = 25.0;
+	        double expectedResult = 5.0;
+	        double result = App.squareRoot(a);
+	        Assert.assertEquals(expectedResult, result, 0.0f);
+	    }
+	
 	@Test
-	public void factorial_test(){
-        assertEquals("True Positive for Factorial", 120, App.factorial(5), 0.0f);
-    }
-
-    @Test
-    public void naturalLog_test(){
-        assertEquals("True Positive for Natural Log", 1.0, App.naturalLog(2.718), 0.2f);
-    }
-
-    @Test
-    public void power_test(){
-        assertEquals("True Positive for Power", 32.0, App.power(2.0, 5.0), 0.0f);
-    }
-
-
+	    public void test_factorial() {
+	        int a = 5;
+	        int expectedResult = 120;
+	        int result = App.factorial(a);
+	        Assert.assertEquals(expectedResult, result);
+	    }
+		
+	@Test
+	    public void test_naturalLog() {
+	        double a = 2.718;
+	        double expectedResult = 1.0;
+	        double result = App.naturalLog(a);
+	        Assert.assertEquals(expectedResult, result, 0.2f);
+	    }
+	
+	@Test
+	    public void test_power() {
+	        double a = 2.0;
+			double b = 5.0;
+	        double expectedResult = 32.0;
+	        double result = App.power(a,b);
+	        Assert.assertEquals(expectedResult, result, 0.0f);
+	    }
+	
 }
 

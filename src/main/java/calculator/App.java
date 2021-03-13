@@ -66,31 +66,35 @@ public class App {
 		    }while(flag == 0);
 		}
 
-	public static void squareRoot(double num){
+	public static double squareRoot(double num){
 		double c = Math.sqrt(num);
 		System.out.println("");
 		System.out.println("The Result is "+c);
 		System.out.println("");
+		return c;
 	}
 
-	public static void factorial(int num){
+	public static int factorial(int num){
 	    int c = num ;
 		for(int i=num-1; i>=1; i--) c = c*i;
 		System.out.println("");
 		System.out.println("The Result is "+c);
 		System.out.println("");
+		return c;
 	}
-	public static void naturalLog(double num){
+	public static double naturalLog(double num){
 		double c = Math.log(num);	
 		System.out.println("");
 		System.out.println("The Result is "+ c);
 		System.out.println("");
+		return c;
 	}
-	  public static void power(double num, double exp){
+	  public static double power(double num, double exp){
 		double c = Math.pow(num,exp);
 		System.out.println("");
 		System.out.println("The Result is "+ c);
 		System.out.println("");
+		return c;
 	}
 
 }

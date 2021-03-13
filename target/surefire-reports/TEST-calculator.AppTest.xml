@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="calculator.AppTest" time="0.025" tests="5" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="calculator.AppTest" time="0.088" tests="4" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="gnome"/>
     <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
@@ -7,7 +7,7 @@
     <property name="java.specification.version" value="1.8"/>
     <property name="sun.cpu.isalist" value=""/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
-    <property name="java.class.path" value="/home/vaishnavi/iiitb/SEM8/SPE/CalculatorDevops/CalculatorDevops/target/test-classes:/home/vaishnavi/iiitb/SEM8/SPE/CalculatorDevops/CalculatorDevops/target/classes:/home/vaishnavi/.m2/repository/junit/junit/4.11/junit-4.11.jar:/home/vaishnavi/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:"/>
+    <property name="java.class.path" value="/home/vaishnavi/iiitb/SEM8/SPE/CalculatorDevops/CalculatorDevops/target/test-classes:/home/vaishnavi/iiitb/SEM8/SPE/CalculatorDevops/CalculatorDevops/target/classes:/home/vaishnavi/.m2/repository/junit/junit/4.13.1/junit-4.13.1.jar:/home/vaishnavi/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:"/>
     <property name="java.vm.vendor" value="Private Build"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
@@ -17,8 +17,8 @@
     <property name="user.country" value="IN"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64"/>
-    <property name="sun.java.command" value="/home/vaishnavi/iiitb/SEM8/SPE/CalculatorDevops/CalculatorDevops/target/surefire/surefirebooter1327516711698514492.jar /home/vaishnavi/iiitb/SEM8/SPE/CalculatorDevops/CalculatorDevops/target/surefire 2021-03-12T14-28-54_804-jvmRun1 surefire2226313052893226804tmp surefire_02323850502577316287tmp"/>
-    <property name="surefire.test.class.path" value="/home/vaishnavi/iiitb/SEM8/SPE/CalculatorDevops/CalculatorDevops/target/test-classes:/home/vaishnavi/iiitb/SEM8/SPE/CalculatorDevops/CalculatorDevops/target/classes:/home/vaishnavi/.m2/repository/junit/junit/4.11/junit-4.11.jar:/home/vaishnavi/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:"/>
+    <property name="sun.java.command" value="/home/vaishnavi/iiitb/SEM8/SPE/CalculatorDevops/CalculatorDevops/target/surefire/surefirebooter6011943772334132888.jar /home/vaishnavi/iiitb/SEM8/SPE/CalculatorDevops/CalculatorDevops/target/surefire 2021-03-13T14-46-00_183-jvmRun1 surefire8872212633268566195tmp surefire_07354134664038440670tmp"/>
+    <property name="surefire.test.class.path" value="/home/vaishnavi/iiitb/SEM8/SPE/CalculatorDevops/CalculatorDevops/target/test-classes:/home/vaishnavi/iiitb/SEM8/SPE/CalculatorDevops/CalculatorDevops/target/classes:/home/vaishnavi/.m2/repository/junit/junit/4.13.1/junit-4.13.1.jar:/home/vaishnavi/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="/home/vaishnavi"/>
     <property name="user.language" value="en"/>
@@ -30,7 +30,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="/home/vaishnavi/iiitb/SEM8/SPE/CalculatorDevops/CalculatorDevops/target/surefire/surefirebooter1327516711698514492.jar"/>
+    <property name="surefire.real.class.path" value="/home/vaishnavi/iiitb/SEM8/SPE/CalculatorDevops/CalculatorDevops/target/surefire/surefirebooter6011943772334132888.jar"/>
     <property name="sun.boot.class.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/classes"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="1.8.0_282-8u282-b08-0ubuntu1~18.04-b08"/>
@@ -58,9 +58,8 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="testDivideByZero" classname="calculator.AppTest" time="0.001"/>
-  <testcase name="testAdd" classname="calculator.AppTest" time="0.004"/>
-  <testcase name="testSubtract" classname="calculator.AppTest" time="0"/>
-  <testcase name="testDivide" classname="calculator.AppTest" time="0"/>
-  <testcase name="testMultiply" classname="calculator.AppTest" time="0"/>
+  <testcase name="test_factorial" classname="calculator.AppTest" time="0.011"/>
+  <testcase name="test_naturalLog" classname="calculator.AppTest" time="0.001"/>
+  <testcase name="test_squareRoot" classname="calculator.AppTest" time="0"/>
+  <testcase name="test_power" classname="calculator.AppTest" time="0"/>
 </testsuite>
