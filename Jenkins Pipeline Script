@@ -1,3 +1,4 @@
+
 pipeline{
     environment{
         docker_image = ""
@@ -14,7 +15,7 @@ pipeline{
                 sh 'mvn install'
             }
         }
-        stage('Step 3: Build docker image') {
+        stage('Step 3: Build Docker Image'){ 
             steps {
                 script {
                     docker_image = docker.build "vaishnavi2902/calculator_devops:latest"
