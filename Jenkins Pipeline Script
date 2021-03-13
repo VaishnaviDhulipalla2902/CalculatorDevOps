@@ -11,13 +11,13 @@ pipeline{
         }
         stage('Step 2: Maven'){
             steps{
-                sh 'mvn clean test'
+                sh 'mvn install'
             }
         }
         stage('Step 3: Build docker image') {
             steps {
                 script {
-                    docker_image = docker.build "vaishnavi2902/calculator_devops"
+                    docker_image = docker.build "vaishnavi2902/calculator_devops:latest"
                 }
             }
         }
