@@ -1,4 +1,4 @@
-package calculator;
+package App;
 
 
 import org.junit.Assert;
@@ -6,48 +6,28 @@ import org.junit.Before;
 import org.junit.Test;
 
 public class AppTest {
-	   
-	    @Test
-	    public void testAdd() {
-	        int a = 15;
-	        int b = 20;
-	        int expectedResult = 35;
-	        int result = App.add(a, b);
-	        Assert.assertEquals(expectedResult, result);;
-	    }
-	    
-	    @Test
-	    public void testSubtract() {
-	        int a = 25;
-	        int b = 20;
-	        int expectedResult = 5;
-	        int result = App.sub(a, b);
-	        Assert.assertEquals(expectedResult, result);;
-	    }
-	    
-	    @Test
-	    public void testMultiply() {
-	    	int a = 10;
-	    	int b = 25;
-	    	int expectedResult = 250;
-	    	int result = App.mul(a, b);
-	        Assert.assertEquals(expectedResult, result);;
-	    }
-	    
-	    @Test
-	    public void testDivide() {
-	        int a = 56;
-	        int b = 10;
-	        int expectedResult = 5;
-	        int result = App.div(a, b);
-	        Assert.assertEquals(expectedResult, result);
-	    }
-	    @Test(expected = ArithmeticException.class)
-	    public void testDivideByZero() {
-	        int a = 15;
-	        int b = 0;
-	        App.div(a, b);
-	    }
+	App calc = new App();
+
+	@Test
+	public void squareRoot_test(){
+		assertEquals("True Positive for SquareRoot",5.0,App.squareRoot(25.0),0.0f);
+	}
+
+	@Test
+	public void factorial_test(){
+        assertEquals("True Positive for Factorial", 120, App.factorial(5), 0.0f);
+    }
+
+    @Test
+    public void naturalLog_test(){
+        assertEquals("True Positive for Natural Log", 1.0, App.naturalLog(2.718), 0.2f);
+    }
+
+    @Test
+    public void power_test(){
+        assertEquals("True Positive for Power", 32.0, App.power(2.0, 5.0), 0.0f);
+    }
+
 
 }
 
