@@ -10,7 +10,7 @@ pipeline{
                 git branch: 'main', url: 'https://github.com/VaishnaviDhulipalla2902/CalculatorDevOps.git'
             }
         }
-        stage('Step 2: Maven'){
+        stage('Step 2: Maven Build'){
             steps{
                 sh 'mvn clean package'
             }
