@@ -1,7 +1,7 @@
 package calculator;
 import java.util.*;
 public class App {
-
+	private static final Logger logger = LogManager.getLogger(App.class);
 	public static void main(String[] args){
 		Scanner reader = new Scanner(System.in);
 		int op, flag=0;
@@ -71,6 +71,7 @@ public class App {
 		System.out.println("");
 		System.out.println("The Result is "+c);
 		System.out.println("");
+		logger.info("Executing squareRoot function!");
 		return c;
 	}
 
@@ -80,6 +81,7 @@ public class App {
 		System.out.println("");
 		System.out.println("The Result is "+c);
 		System.out.println("");
+		logger.info("Executing Factorial function!");
 		return c;
 	}
 	public static double naturalLog(double num){
@@ -87,6 +89,7 @@ public class App {
 		System.out.println("");
 		System.out.println("The Result is "+ c);
 		System.out.println("");
+		logger.info("Executing naturalLog function!");
 		return c;
 	}
 	  public static double power(double num, double exp){
@@ -94,6 +97,7 @@ public class App {
 		System.out.println("");
 		System.out.println("The Result is "+ c);
 		System.out.println("");
+		logger.info("Executing Power function!");
 		return c;
 	}
 
